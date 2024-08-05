@@ -1,0 +1,23 @@
+
+:root {
+    /* main colors */
+    --primary-background-color: #ddd;
+    --primary-text-color: #555;
+    --alternate-background-color: #aaa;
+    --alternate-text-color: #222;
+    /* specific overrides */
+    --titlebar-background-color: var(--alternate-background-color);
+    --titlebar-text-color: var(--alternate-text-color);
+    --navbar-unselected-background-color: var(--alternate-background-color);
+    --navbar-unselected-color: var(--alternate-text-color);
+    --navbar-selected-background-color: var(--primary-background-color);
+    --navbar-selected-color: var(--primary-text-color);
+}
+
+/* DEBUG COLORS */
+/* :root { */
+/*     --primary-background-color: #0c0; */
+/*     --primary-text-color: #909; */
+/*     --alternate-background-color: #c0c; */
+/*     --alternate-text-color: #090; */
+/* } */

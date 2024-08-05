@@ -1,0 +1,71 @@
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+}
+
+
+
+.titlebar {
+    background-color: var(--titlebar-background-color);
+    color: var(--titlebar-text-color);
+}
+
+.titlebar > .nav {
+    background-color: var(--navbar-unselected-background-color);
+    color: var(--navbar-unselected-color);
+}
+.titlebar > .nav > li:hover {
+    background-color: var(--navbar-selected-background-color);
+    color: var(--navbar-selected-color);
+}
+.titlebar > .nav > li > a,
+.titlebar > .nav > li > a:visited {
+    color: var(--navbar-unselected-color);
+    text-decoration: none;
+}
+.titlebar > .nav > li:hover > a,
+.titlebar > .nav > li:hover > a:visited {
+    color: var(--navbar-selected-color);
+}
+
+
+/* Layout: */
+
+body {
+    margin: 0;
+}
+
+.titlebar > .nav {
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.titlebar > .nav > li {
+    display: inline-block;
+    list-style-type: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    width: fit-content;
+    padding: 10px;
+}
+.titlebar > .nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titlebar > .nav > li > * {
+}
+
+.titlebar > h1 {
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+#main {
+    max-width: 1000px;
+    width: fit-content;
+    margin: auto;
+}
+
