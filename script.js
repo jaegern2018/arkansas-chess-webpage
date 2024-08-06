@@ -33,7 +33,7 @@ async function fillWithContent(query, path, loading_msg = "Loading content", err
 
 addEventListener("DOMContentLoaded", (event) => {
     const urlPath = document.location.pathname;
-    const parsedPath = urlPath.replace("/", "-").slice(1)
+    const parsedPath = urlPath.replace("/", "-").replace(/\.html/, "").slice(1);
     // All
     fillWithContent("title", `${parsedPath}-page-title.txt`);
     // index page
